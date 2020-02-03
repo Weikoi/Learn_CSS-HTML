@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            font-family: "consolas", "Arial", Serif,sans-serif;
+            color: #333333;
+            background-color: #cccccc;
+            margin: 1em 10%;
+        }
+        h1{
+            color: #333333;
+            background-color: transparent;
+        }
+        a{
+            color: #c60;
+            background-color: transparent;
+            font-weight: bold;
+            text-decoration: none;
+            width: 190px;
+            height: 108px;
+        }
+    </style>
+</head>
+<body window.onload=count>
+<!--这是注释-->
+<h1>Picture Gallery</h1>
+<ul>
+    <li><a href="images/1.jpg" title="1 image" onclick="showPic(this); change_title(this); return false;">图片一</a></li>
+    <li><a href="images/2.jpg" title="2 image" onclick="showPic(this); change_title(this);  return false;">图片二</a></li>
+    <li><a href="images/3.jpg" title="3 image" onclick="showPic(this); change_title(this);  return false;">图片三</a></li>
+    <li><a href="images/4.jpg" title="4 image" onclick="showPic(this); change_title(this);  return false;">图片四</a></li>
+    <img id="placeholder" src="images/5.jpg" alt="my images"/>
+    <p id="title_image">this is a image</p>
+    <script>
+        function showPic(whichPic) {
+            let source = whichPic.getAttribute("href");
+            let placeholder = document.getElementById("placeholder");
+
+            let text = whichPic.getAttribute("title");
+            let description = whichPic.getAttribute("description");
+            placeholder.setAttribute("src", source);
+        }
+
+        function change_title(whichPic) {
+            let source = whichPic.getAttribute("title");
+            let title_image = document.getElementById("title_image");
+            alert(title_image.childNodes);
+            title_image.childNodes[0].nodeValue = source
+        }
+
+        function count(node) {
+            let body_element = document.getElementsByTagName("body")[0];
+            alert(body_element.childNodes.length);
+        }
+
+        // Window.onload = count();
+    </script>
+</ul>
+<a>&lt;</a>
+</body>
+</html>

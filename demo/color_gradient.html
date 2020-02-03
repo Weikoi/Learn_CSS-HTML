@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    body{
+      /*background: linear-gradient(35deg, #CCFFFF, #FFCCCC);*/
+    }
+    .linear{
+      border-radius: 20px;
+      width: 70%;
+      height: 400px;
+      margin: 50px auto;
+      background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+    }
+    .repeat{
+      border-radius: 20px;
+      width: 70%;
+      height: 400px;
+      margin:  50px auto;
+      background: repeating-linear-gradient(
+              45deg,
+              yellow 0px,
+              yellow 40px,
+              black 40px,
+              black 80px
+      );
+    }
+
+  </style>
+</head>
+<body>
+<div class="linear"></div>
+<div class="repeat"></div>
+</body>
+</html>

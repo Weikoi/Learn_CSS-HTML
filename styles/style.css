@@ -1,0 +1,54 @@
+html {
+    /* px 表示 “像素（pixels）”: 基础字号为 10 像素 */
+    font-size: 30px;
+    /* Google fonts 输出的 CSS */
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+}
+
+body {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: lightgray;
+    padding: 20px 20px;
+    border: 2px solid black;
+}
+
+h2{
+    text-align: center;
+    font-size: 60px;
+}
+h2 {
+    margin: 0;
+    padding: 10px 0;
+    color: #00539F;
+    text-shadow: 3px 3px 1px black;
+}
+
+p,li{
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+p{
+    color: red;
+    width: auto;
+    border: 1px solid black;
+}
+a:hover{
+    color: green;
+}
+
+#my_id{
+    color: blue;
+}
+
+.para{
+    color: orange;
+}
